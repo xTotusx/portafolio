@@ -1,39 +1,129 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
 }
 
+:root {
+  --primary: #1e88e5;
+  --dark: #1c1c1c;
+  --light: #ffffff;
+  --bg: #f4f4f4;
+  --text: #333;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Contenedor reutilizable */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* Header */
 header {
-  background-color: #1e1e1e;
-  color: white;
-  padding: 1rem;
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 2rem 0;
   text-align: center;
+}
+
+header h1 {
+  margin-bottom: 1rem;
 }
 
 nav a {
-  margin: 0 10px;
+  color: var(--light);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* Secciones */
+.section {
+  padding: 3rem 0;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Proyectos */
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.proyecto-card {
+  background: var(--light);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-5px);
+}
+
+.proyecto-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Habilidades */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.skills-list li {
+  background-color: var(--primary);
   color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Contacto */
+#contacto a {
+  color: var(--primary);
   text-decoration: none;
 }
 
-section {
-  padding: 2rem;
-  background-color: white;
-  margin: 1rem;
-  border-radius: 8px;
+#contacto a:hover {
+  text-decoration: underline;
 }
 
+/* Footer */
 footer {
+  background-color: var(--dark);
+  color: var(--light);
   text-align: center;
   padding: 1rem;
-  background-color: #333;
-  color: white;
+  font-size: 0.9rem;
 }
 
-
-.oscuro {
-  background-color: #222;
-  color: white;
-}
