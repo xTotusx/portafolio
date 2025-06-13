@@ -67,3 +67,54 @@ footer {
   color: #888;
   font-size: 0.9rem;
 }
+
+/* ==== Responsive Design ==== */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+}
+
+/* ==== Animaciones suaves ==== */
+a, button {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* ==== Tarjetas de proyecto ==== */
+.proyecto {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+  transform: translateY(-5px);
+}
+
+.proyecto h3 {
+  color: #00adb5;
+  margin-bottom: 0.5rem;
+}
+
+/* ==== Íconos de contacto ==== */
+#contacto i {
+  margin-right: 0.5rem;
+}
