@@ -226,3 +226,21 @@ body.inicio {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* === descargar pdf === */
+.btn-descargar {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #00adb5;
+  color: #121212;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-descargar:hover {
+  background-color: #00cfd5;
+  transform: scale(1.05);
+}
