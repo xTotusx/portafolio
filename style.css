@@ -244,3 +244,31 @@ body.inicio {
   background-color: #00cfd5;
   transform: scale(1.05);
 }
+
+
+
+/* === apartado de imagenes en habilidades=== */
+.skills-img-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.skill-img {
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 120px;
+}
+
+.skill-img img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.skill-img:hover {
+  transform: scale(1.1);
+}
