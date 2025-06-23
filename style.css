@@ -272,3 +272,22 @@ body.inicio {
 .skill-img:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 600px) {
+  .skills-img-grid {
+    gap: 1rem;
+  }
+
+  .skill-img {
+    width: 100px;
+  }
+
+  .skill-img img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skill-img p {
+    font-size: 0.9rem;
+  }
+}
