@@ -336,3 +336,47 @@ body.inicio {
     padding: 1.5rem;
   }
 }
+
+
+/* ==== Sobre mí Grid ==== */
+.sobre-mi-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.texto-sobre-mi, .fortalezas {
+  flex: 1 1 45%;
+}
+
+.fortalezas ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.fortalezas li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.fortalezas i {
+  color: #00adb5;
+  margin-right: 0.5rem;
+}
+
+.frase {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #ccc;
+  border-left: 3px solid #00adb5;
+  padding-left: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sobre-mi-grid {
+    flex-direction: column;
+  }
+}
