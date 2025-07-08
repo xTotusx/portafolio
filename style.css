@@ -291,3 +291,41 @@ body.inicio {
     font-size: 0.9rem;
   }
 }
+
+.proyecto.destacado {
+  border: 2px solid #00adb5;
+  background-color: #181818;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 15px rgba(0, 173, 181, 0.4);
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.proyecto.destacado h3 {
+  font-size: 1.8rem;
+  color: #00adb5;
+  margin-bottom: 1rem;
+}
+
+.proyecto.destacado p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #f0f0f0;
+}
+
+.proyecto.destacado a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #00adb5;
+  color: #121212;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.proyecto.destacado a:hover {
+  background-color: #019ca1;
+}
