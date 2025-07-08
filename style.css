@@ -329,3 +329,10 @@ body.inicio {
 .proyecto.destacado a:hover {
   background-color: #019ca1;
 }
+
+@media (max-width: 768px) {
+  .proyecto.destacado {
+    border: 3px solid #00adb5;
+    padding: 1.5rem;
+  }
+}
